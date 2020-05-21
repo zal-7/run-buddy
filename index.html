@@ -92,6 +92,90 @@ footer a {
 section {
   padding: 60px;
 }
+.intro {
+  text-align: center;
+}
+.intro h2 {
+  font-size: 55px;
+  color: #024e76;
+  margin-bottom: 35px;
+  padding: 0 100px 20px 100px;
+  border-bottom: 3px solid;
+  border-color: #fce138;
+}
+.intro h2 {
+  /* add this alongside your other declarations */
+  display: inline-block;
+}
+.intro p {
+  line-height: 1.7;
+  color: #39a6b2;
+  width: 80%;
+  font-size: 20px;
+}
+.intro p {
+  /* add this alongside your other declarations */
+  margin: 0 auto;
+}
+.steps { 
+  text-align: center;
+  background: #fce138;
+}
+.steps h2 {
+  font-size: 55px;
+  color: #024e76;
+  margin-bottom: 35px;
+  padding: 0 100px 20px 100px;
+  border-bottom: 3px solid;
+  border-color: #39a6b2;
+}
+.section-title {
+  font-size: 55px;
+  color: #024e76;
+  margin-bottom: 35px;
+  padding: 0 100px 20px 100px;
+  display: inline-block;
+  border-bottom: 3px solid;
+}
+
+.primary-border {
+  border-color: #fce138;
+}
+
+.secondary-border {
+  border-color: #39a6b2;
+}
+  /* remove this entire CSS rule */
+  .intro h2 {
+
+}
+
+  /* and this one */
+.steps h2 {
+
+}
+.steps div {
+  margin-bottom: 80px;
+}
+
+.steps img {
+  width: 15%;
+  margin: 10px 0;
+} 
+
+.steps h3 {
+  color: #024e76;
+  font-size: 46px;
+  margin-top: 10px;
+}
+
+.steps p {
+  color: #39a6b2;
+  font-size: 23px;
+}
+.steps span {
+  font-size: 38px;
+}
 /* Hero Style Start */
 .hero {
   background-image: url("../assets/images/hero-bg.jpg");
@@ -191,22 +275,22 @@ section {
 </section>
 
 <!-- "what we do" section -->
-<section id="what-we-do">
-  <h2>What We Do</h2>
+<section id="what-we-do" class="intro">
+  <h2 class="section-title primary-border">What We Do</h2>
   <p>
     butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
   </p>
 </section>
 
 <!-- "what you do" section -->
-<section id="what-you-do">
-  <h2>What You Do</h2>
+<section id="what-you-do" class="steps">
+  <h2 class="section-title secondary-border">What You Do</h2>
 
 
 <div>
   <!-- insert this img element -->
   <img src="../assets/images/step-1.svg" alt="" />
-  <h3>Step 1: Fill Out the Form Above.</h3>
+  <h3>Step 1: <span>Fill Out the Form Above.</span></h3>
   <p>You're already here, so why not?</p>
 </div>
 
