@@ -98,9 +98,7 @@ footer a {
 section {
   padding: 60px;
 }
-.intro {
-  text-align: center;
-}
+
 .intro h2 {
   font-size: 55px;
   color: #024e76;
@@ -118,13 +116,13 @@ section {
   color: #39a6b2;
   width: 80%;
   font-size: 20px;
+  text-align: center;
 }
 .intro p {
   /* add this alongside your other declarations */
   margin: 0 auto;
 }
 .steps { 
-  text-align: center;
   background: #fce138;
 }
 .steps h2 {
@@ -138,10 +136,11 @@ section {
 .section-title {
   font-size: 55px;
   color: #024e76;
-  margin-bottom: 35px;
-  padding: 0 100px 20px 100px;
-  display: inline-block;
   border-bottom: 3px solid;
+  padding-bottom: 20px;
+  text-align: center;
+  margin :0 auto 35px auto;
+  width: 50%;
 }
 
 .primary-border {
@@ -157,31 +156,60 @@ section {
 }
 
   /* and this one */
+
+  .step {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+  border-bottom: 1px solid #39a6b2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.step-info {
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.step-img {
+  flex: 1 12%;
+  margin-right: 20px;
+}
+
+.step-img img {
+  max-width: 100%;
+}
+
+.step-text {
+  flex: 12;
+}
+
 .steps h2 {
 
 }
-.steps div {
-  margin-bottom: 80px;
-}
 
-.steps img {
-  width: 15%;
-  margin: 10px 0;
-} 
 
-.steps h3 {
+.step h3 {
   color: #024e76;
   font-size: 46px;
-  margin-top: 10px;
+  flex: 1 30%;
 }
 
-.steps p {
+.step-text p {
   color: #39a6b2;
-  font-size: 23px;
+  font-size: 18px;
 }
-.steps span {
-  font-size: 38px;
+
+.step-text h4 {
+  font-size: 26px;
+  line-height: 1.5;
+  color: #024e76;
 }
+
 /* Hero Style Start */
 .hero {
   background-image: url("../assets/images/hero-bg.jpg");
@@ -256,7 +284,7 @@ section {
   font-size: 16px;
 }
 .trainers {
-  text-align: center;
+
 }
 .trainer {
   width: 900px;
@@ -309,7 +337,6 @@ section {
 
 /* REACH OUT STYLES START */
 .contact {
-  text-align: center;
   background: #024e76;
 }
 
@@ -345,6 +372,10 @@ section {
 
 .contact-info a {
   color: #fce138;
+}
+
+.flex-row {
+  display: flex;
 }
 
 /* REACH OUT STYLES END */
@@ -403,7 +434,12 @@ section {
 
 <!-- "what we do" section -->
 <section id="what-we-do" class="intro">
+  <div class="flex-row">
+    <p>
+      butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
+    </p>
   <h2 class="section-title primary-border">What We Do</h2>
+</div>
   <p>
     butcher selfies chambray shabby chic gentrify readymade yr Echo Park XOXO Tumblr normcore Banksy direct trade Blue Bottle chillwave you probably haven't heard of them single-origin coffee Vice fanny pack fixie Odd Future Austin fingerstache pickled twee synth Wes Anderson Thundercats viral bitters flannel meggings narwhal Marfa Schlitz sustainable Intelligentsia umami deep v craft
   </p>
@@ -411,38 +447,69 @@ section {
 
 <!-- "what you do" section -->
 <section id="what-you-do" class="steps">
+  <div class="flex-row">
   <h2 class="section-title secondary-border">What You Do</h2>
+  </div>
 
-
-<div>
-  <!-- insert this img element -->
-  <img src="../assets/images/step-1.svg" alt="" />
-  <h3>Step 1: <span>Fill Out the Form Above.</span></h3>
-  <p>You're already here, so why not?</p>
+<div class="step">
+  <h3>Step 1.</h3>
+  <div class="step-info">
+    <div class="step-img">
+      <img src="../assets/images/step-1.svg" alt="" />
+    </div>
+    <div class="step-text">
+      <h4>Fill Out The Form Above</h4>
+      <p>You're already here, so why not?</p>
+    </div>
+</div>
 </div>
 
-  <div>
-    <img src="./assets/images/step-2.svg" alt="" />
-    <h3>Step 2: Consult with One of Our Trainers.</h3>
-    <p>Are you here to build muscle, lose weight, or just feel good?</p>
-  </div>
+<div class="step">
+  <h3>Step 2.</h3>
+  <div class="step-info">
+    <div class="step-img">
+      <img src="./assets/images/step-2.svg" alt="" />
+    </div>
+    <div class="step-text">
+      <h4>Consult with One of Our Trainers</h4>
+      <p>Are you here to build muscle, lose weight, or just feel good?</p>
+    </div>
+</div>
+</div>
 
-  <div>
-    <img src="./assets/images/step-3.svg" alt="" />
-    <h3>Step 3: Get Running.</h3>
-    <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
-  </div>
+<div class="step">
+  <h3>Step 3.</h3>
+  <div class="step-info">
+    <div class="step-img">
+      <img src="./assets/images/step-3.svg" alt="" />
+    </div>
+    <div class="step-text">
+      <h4>Get Running</h4>
+      <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+    </div>
+</div>
+</div>
 
-  <div>
-    <img src="./assets/images/step-4.svg" alt="" />
-    <h3>Step 4: See Results.</h3>
-    <p>Bi-weekly checkins with your trainer will keep you focused</p>
-  </div>
-</section>
+
+<div class="step">
+  <h3>Step 3.</h3>
+  <div class="step-info">
+    <div class="step-img">
+      <img src="./assets/images/step-4.svg" alt="" />
+    </div>
+    <div class="step-text">
+      <h4>See Results</h4>
+      <p>Bi-weekly checkins with your trainer will keep you focused</p>
+    </div>
+</div>
+</div>
+
 
 <!-- "meet the trainers" section -->
 <section id="your-trainers" class=:"trainers">
+  <div class="flex-row"></div>
   <h2 class="section-title primary-border">Meet The Trainers</h2>
+</div>
   <article class="trainer">
     <img src="./assets/images/trainer-1.jpg" alt="Arron Stephens in his workout clothes, ready to pump iron" />
     <div class="trainer-bio text-left">
@@ -483,7 +550,9 @@ section {
 
 <!-- "reach out" section -->
 <section id="reach-out" class="contact">
+  <div class="flex-row">
   <h2 class="section-title secondary-border">Reach Out</h2>
+</div>
   <div class="contact-info">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12632.339723356125!2d-121.78880250985134!3d37.670712078038406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fe791cf640645%3A0xfe056271667ddb77!2s1017%20Aberdeen%20Ave%2C%20Livermore%2C%20CA%2094550!5e0!3m2!1sen!2sus!4v1590196241223!5m2!1sen!2sus" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     <div class="contact-form">
