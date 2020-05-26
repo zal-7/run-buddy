@@ -344,17 +344,22 @@ section {
   color: #fce138;
 }
 
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+
 .contact-info iframe {
-  width: 400px;
   height: 400px;
 }
 
 .contact-info div {
-  width: 410px;
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  margin: 30px 0 0 60px;
   color: white;
 }
 
@@ -366,8 +371,29 @@ section {
 .contact-info p, .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
+}
+
+.contact-form input, .contact-form textarea {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width:100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.contact-form button {
+  width: 100%;
+  border: none;
+  background: #fce138;
+  color: #024e76;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
 }
 
 .contact-info a {
@@ -558,21 +584,7 @@ section {
   <div class="flex-row">
   <h2 class="section-title secondary-border">Reach Out</h2>
 </div>
-  <div class="contact-info">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12632.339723356125!2d-121.78880250985134!3d37.670712078038406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fe791cf640645%3A0xfe056271667ddb77!2s1017%20Aberdeen%20Ave%2C%20Livermore%2C%20CA%2094550!5e0!3m2!1sen!2sus!4v1590196241223!5m2!1sen!2sus" width="400" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    <div class="contact-form">
-      <h3>Contact Us</h3>
-      <form>
-        <label for="contact-name">Your Name</label>
-        <input type="text" id="contact-name" placeholder="Your Name" />
-    
-        <label for="contact-message">Message</label>
-        <textarea id="contact-message" placeholder="Message"></textarea>
-    
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </div>
+<div class="contact-info">
   <div>
     <h3>Run Buddy</h3>
     <p>
@@ -580,14 +592,35 @@ section {
       <br />
       Let us know and we'll be happy to talk to you!
     </p>
+
     <address>
-      55 Main Street <br/>
-      Some Town, Ca <br/>
-      12345<br />
-      P: 555.RUN.BUDZ (555.786.2839)<br/>
-      E: <a href="mailto:info@runbuddy.io">info@runbuddy.io</a>
+      55 Main Street <br />
+      Some Town, Ca <br />
+      12345 <br />
+      P: <a href="tel:555.786.2839">555.RUN.BUDZ (555.786.2839)</a><br />
+      E: <a href="mailto://info@runbuddy.io">info@runbuddy.io</a>
     </address>
+
   </div>
+
+  <div class="contact-form">
+    <h3>Contact Us</h3>
+    <form>
+      <label for="contact-name">Your Name</label>
+      <input type="text" id="contact-name" placeholder="Your Name" />
+
+      <label for="contact-message">Message</label>
+      <textarea id="contact-message" placeholder="Message"></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12182.30520634488!2d-74.0652613!3d40.2407219!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1561060983193!5m2!1sen!2sus"
+    frameborder="0" style="border:0" allowfullscreen></iframe>
+
+</div>
 
   
 </section>
