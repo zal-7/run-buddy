@@ -47,6 +47,14 @@
   flex-wrap: wrap;
   padding: 20px 35px;
   background-color: #39a6b2;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-image: url("../assets/images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 header h1 {
   font-weight: bold;
@@ -222,6 +230,8 @@ section {
   justify-content: center;
   flex-wrap: wrap;
   align-items: flex-start;
+  background-attachment: fixed;
+  background-position: 80%;
 }
 
 .hero-cta {
@@ -245,6 +255,8 @@ section {
   color: #024e76;
   width: 40%;
   margin: 3.5%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
 }
 .hero-form {
   ...
@@ -417,6 +429,7 @@ section {
   header {
     padding-bottom: 0;
     justify-content: center;
+    position: relative;
   }
 
   header h1 {
@@ -589,6 +602,107 @@ section {
 .grid-head, .grid-price, .service-grid-item.cancel {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+.some-class {
+  text-shadow: 5px 10px 15px black;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.25);
+}
+
+header h1 {
+  /* add alongside your existing declarations */
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a {
+  /* and here */
+}
+
+.hero-cta h2 {
+  /* and here */
+}
+
+.form-input {
+
+}
+
+.hero-form button {
+
+}
+
+.contact-form input, .contact-form textarea {
+
+}
+
+.contact-form button {
+
+}
+
+.rounded-corners {
+  -webkit-border-radius: 10px; /* old versions of chrome and safari */
+  -moz-border-radius: 10px; /* old versions of firefox */
+  border-radius: 10px; /* standardized browsers */
+}
+
+header nav ul li a:hover {
+  background: #fce138;
+  color: #024e76;
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+.hero-form button:hover {
+  background-color: #39a6b2;  
+}
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
+}
+
+/* update existing rule with this declaration */
+.form-input {
+  background-color: rgba(255,255,255, 0.75);
+}
+
+/* create a new rule for focus state */
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+}
+
+.form-input:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
+}
+
+.contact-form input, .contact-form textarea {
+  /* add a transparent background here */
+}
+
+/* create a new css rule for focus state */
+.contact-form input:focus, .contact-form textarea:focus {
+
+}
+
+.step:last-child {
+  border-bottom: 1px solid #39a6b2;
+}
+
+.step:nth-child(even) {
+  border-bottom: 1px solid #39a6b2;
+}
+
+.step {
+  /* re-add alongside existing declarations */
+  border-bottom: 1px solid #39a6b2;
+}
+
+.step:last-child {
+  border-bottom: none;
+}
+
+.step:not(:last-child) {
+  border-bottom: 1px solid #39a6b2;
 }
 
         </style>
